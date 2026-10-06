@@ -2,6 +2,8 @@
 
 Compiled 6 October 2026. Each row has a tailored cover letter in `letters/` (Word) and `pdf/`, and all 35 are in `Will_McGowan_Cover_Letters_2027_Applications.docx` with this tracker on the first page.
 
+Round 2 (smaller firms, more realistic odds) is in [`smaller_firms/`](smaller_firms/README.md).
+
 
 ## Investment banking
 
