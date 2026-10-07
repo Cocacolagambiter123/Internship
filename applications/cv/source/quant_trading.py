@@ -45,7 +45,7 @@ CV = {
        "bullets": ["Ran weekly tournaments for around 60 players on £600 a semester, reconciling every buy-in and prize pool"]},
     ]},
     {"title": "ADDITIONAL INFORMATION", "paras": [
-      "<b>Technical:</b> R, MATLAB, Python, Excel, Git",
+      "<b>Technical:</b> R, MATLAB, Excel, Git",
       "<b>Interests:</b> poker, over £40,000 in lifetime cash-game profit, using the Kelly criterion to pick buy-in levels and manage bankroll (minimum 50 buy-ins); chess, 14th at the Irish U19 Chess Championships (2023) and won 21 of 22 games in a simultaneous exhibition against players averaging 1860 FIDE; powerlifting, Northern Ireland U19 champion (2023)",
     ]},
   ],
