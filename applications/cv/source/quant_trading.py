@@ -21,6 +21,9 @@ CV = {
       {"left": "<b>Wheat Calendar-Spread Strategy</b> | <i>Agricapital Society</i>", "right": "<i>R</i>",
        "bullets": ["Built a wheat calendar-spread strategy from futures curve structure and contrarian CFTC managed-money positioning, with every parameter fixed before testing to avoid overfitting",
                    "Weekly backtest (Apr 2025 - Oct 2026): Sharpe 0.76 before costs and 0.28 after, maximum drawdown 3.1%; identified turnover of about 50x notional a year as the main drag on returns"]},
+      {"left": "<b>Delta-Hedging Simulator</b>", "right": "<i>MATLAB</i>",
+       "bullets": ["Simulated selling a three-month call option and delta-hedging it on 50,000 price paths; hedging four times as often halved the hedging error, in line with theory",
+                   "Showed that selling at the wrong volatility earns the Black-Scholes price difference on average, and that with 0.5% trading costs weekly hedging beats daily"]},
       {"left": "<b>Monte Carlo Option Pricing Engine</b>", "right": "<i>MATLAB, Python</i>",
        "bullets": ["Built a vectorised Monte Carlo engine pricing European and Asian options under risk-neutral GBM, benchmarked against Black-Scholes and the closed-form geometric-Asian price",
                    "Cut the standard error of arithmetic-Asian estimates by about 97% at N = 100,000 using a geometric-Asian control variate alongside antithetic variates, equivalent to roughly 1,300 times as many plain Monte Carlo paths"]},
@@ -28,12 +31,10 @@ CV = {
        "bullets": ["Tested CAPM on 704 anomaly portfolios across 56 countries (JKP global factor data), regressing each on its local market excess return",
                    "Rejected zero alpha for 32% of portfolios at the 5% level (32.7% with Newey-West errors), over six times the rate expected by chance, and jointly via GRS in 48 of 52 countries",
                    "Momentum alphas were significant in 37 of 55 countries, size in only 4 of 56"]},
-      {"left": "<b>Corn-Soybean Cointegration</b> | <i>group project</i>", "right": "<i>R</i>",
-       "bullets": ["Found corn and soybean prices cointegrated (quarterly, 1990-2022; Engle-Granger and Johansen tests), with both prices correcting back to equilibrium in an error-correction model (soybean coefficient -0.29, p &lt; 0.001)"]},
     ]},
     {"title": "WORK EXPERIENCE", "entries": [
       {"left": "<b>Le Set</b>, Glasgow | <i>Head Mixologist</i>", "right": "Sep 2026 - Present",
-       "bullets": ["Created 4 original house cocktails, wrote the specifications for a new 200-cover venue's 11-drink menu and trained around 15 bar staff to deliver it"]},
+       "bullets": ["Wrote a new 200-cover venue's 11-drink menu, including 4 original cocktails; trained around 15 bar staff"]},
       {"left": "<b>KONG</b>, Glasgow | <i>Mixologist and Front of House</i>", "right": "Oct 2024 - Jun 2026",
        "bullets": ["Analysed sales patterns to refine upselling prompts, raising average customer spend by an estimated 25%; reconciled cash and card takings at the end of each shift"]},
     ]},
@@ -45,7 +46,7 @@ CV = {
     ]},
     {"title": "ADDITIONAL INFORMATION", "paras": [
       "<b>Technical:</b> Python, R, MATLAB, Excel, Git",
-      "<b>Interests:</b> poker, over £40,000 in lifetime cash-game winnings under a 50-buy-in bankroll rule; chess, 14th at the Irish U19 Chess Championships (2023) and won 21 of 22 games in a simultaneous exhibition against players averaging 1860 FIDE; powerlifting, Northern Ireland U19 champion (2023)",
+      "<b>Interests:</b> poker, over £40,000 in lifetime cash-game profit, using the Kelly criterion to pick buy-in levels and manage bankroll (minimum 50 buy-ins); chess, 14th at the Irish U19 Chess Championships (2023) and won 21 of 22 games in a simultaneous exhibition against players averaging 1860 FIDE; powerlifting, Northern Ireland U19 champion (2023)",
     ]},
   ],
 }
