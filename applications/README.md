@@ -4,7 +4,7 @@ Compiled 6 October 2026. Each row has a tailored cover letter in `letters/` (Wor
 
 Round 2 (smaller firms, more realistic odds) is in [`smaller_firms/`](smaller_firms/README.md).
 
-Your four CVs, updated with the chess simul in Interests, are in [`cv/`](cv/). On the Quant CV the Methods line is two words shorter so it still fits on one page.
+Your four CVs, updated with the chess simul in Interests, are in [`cv/`](cv/). The Quant CV also has a Projects section led by the wheat strategy, and `cv/source/` rebuilds it.
 
 
 ## Investment banking
