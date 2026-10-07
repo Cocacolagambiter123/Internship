@@ -8,6 +8,8 @@ All 70 letters (both rounds) are also in one Word document, each with its applic
 
 Your four CVs, updated with the chess simul in Interests, are in [`cv/`](cv/). The Quant CV also has a Projects section led by the wheat strategy, and `cv/source/` rebuilds it. [`Quant_CV_Interview_Notes.md`](Quant_CV_Interview_Notes.md) explains its newest lines for interviews.
 
+[`Dissertation_Top_5_Ideas.md`](Dissertation_Top_5_Ideas.md) ranks five original dissertation ideas for Dr Gifuni, with a first email to send him.
+
 
 ## Investment banking
 
