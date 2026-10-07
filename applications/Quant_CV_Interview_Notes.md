@@ -26,7 +26,7 @@ Short explanations for the newest lines on the Quant CV, with the questions an i
 
 **"What are the model's limits?"** Volatility is constant, prices move smoothly with no jumps, costs are a fixed percentage of the value traded, and there is one option. Real markets have jumps and changing volatility, so real hedging errors are larger.
 
-**"What would you do next?"** Name the extension you did yourself, for example hedging a put or changing the drift (see the project README).
+**"What would you do next?"** Name an extension you have done yourself. Two quick ones: hedge a put instead of a call, or set the drift equal to the risk-free rate (`p.mu = p.r`) and show the gap in the wrong-volatility table disappears.
 
 ## Kelly criterion for poker stakes
 
@@ -46,6 +46,6 @@ Short explanations for the newest lines on the Quant CV, with the questions an i
 
 ## Other lines to be ready on
 
-**"About 97% … equivalent to roughly 1,300 times as many plain Monte Carlo paths."** Monte Carlo error falls with the square root of the number of paths. Cutting the standard error to 2.76% of plain Monte Carlo would otherwise take (1/0.0276)² ≈ 1,300 times as many paths.
+**"About 97% … equivalent to roughly 1,300 times as many plain Monte Carlo paths."** Monte Carlo error falls with the square root of the number of paths. In the repo the control variate cuts the standard error from 0.02697 to 0.00076, about 2.8% of plain Monte Carlo, which would otherwise take about 1,300 times as many paths (the script prints 1276). The quick way to see it: the arithmetic and geometric payoffs have correlation ρ = 0.9996, and the control variate leaves a fraction 1 − ρ² of the variance, so the ratio is 1/(1 − ρ²) ≈ 1,300.
 
 **"Over six times the rate expected by chance."** At the 5% significance level, 5% of tests reject by chance even when the CAPM is right. Rejecting for 32% of portfolios is about 6.4 times that.

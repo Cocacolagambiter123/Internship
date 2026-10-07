@@ -1,16 +1,13 @@
-function [price, delta, gamma, vega] = bs_call(S, K, tau, r, sigma)
-%BS_CALL Black-Scholes price and Greeks of a European call. Needs no toolboxes.
-%   S may be a vector of spot prices; tau is the time to expiry in years.
-%   vega is per 1.00 change in volatility (divide by 100 for per vol point).
+function [price, delta, vega] = bs_call(S, K, tau, r, sigma)
+%BS_CALL Black-Scholes price, delta and vega of a European call, with tau the time to expiry in years.
+% S or sigma may be vectors. vega is per 1.00 change in volatility, not per vol point.
 
 d1 = (log(S ./ K) + (r + 0.5 * sigma.^2) .* tau) ./ (sigma .* sqrt(tau));
 d2 = d1 - sigma .* sqrt(tau);
-pdf1 = exp(-0.5 * d1.^2) / sqrt(2 * pi);
 
-price = S .* norm_cdf(d1) - K .* exp(-r .* tau) .* norm_cdf(d2);
 delta = norm_cdf(d1);
-gamma = pdf1 ./ (S .* sigma .* sqrt(tau));
-vega = S .* pdf1 .* sqrt(tau);
+price = S .* delta - K .* exp(-r .* tau) .* norm_cdf(d2);
+vega = S .* sqrt(tau) .* exp(-0.5 * d1.^2) / sqrt(2 * pi);
 end
 
 function p = norm_cdf(x)
