@@ -8,7 +8,7 @@ CV = {
        "rows": ["<i>BA (Hons) Economics</i>"],
        "bullets": ["Average grade to date: 2:1, including 90% in first-year Finance",
                    "Second-highest mark (78%) in a group project for Advanced Corporate Finance and Financial Markets",
-                   "<b>Relevant Modules:</b> Applied Econometrics; Treasury Management and Derivatives; Industrial Economics"],
+                   "<b>Relevant Modules:</b> Applied Econometrics, Treasury Management and Derivatives, Industrial Economics"],
        "subs": [
          {"left": "<b>Dissertation</b> | <i>MATLAB</i>", "right": "In progress, due 2027",
           "rows": ["<i>“Who Hedges the Barrel? Sovereign Oil Hedging and Petro-Currency Reactions to OPEC News”</i>"],
@@ -43,7 +43,7 @@ CV = {
     ]},
     {"title": "ADDITIONAL INFORMATION", "paras": [
       "<b>Technical:</b> R, MATLAB, Excel, Git",
-      "<b>Interests:</b> chess, 14th at the Irish U19 Chess Championships (2023) and won 21 of 22 games in a simultaneous exhibition against players averaging 1860 FIDE; powerlifting, Northern Ireland U19 champion (2023)",
+      "<b>Interests:</b> Chess, 14th at the Irish U19 Chess Championships (2023) and won 21 of 22 games in a simultaneous exhibition against players averaging 1860 FIDE; Powerlifting, Northern Ireland U19 champion (2023)",
     ]},
   ],
 }

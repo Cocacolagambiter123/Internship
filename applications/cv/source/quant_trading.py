@@ -7,7 +7,7 @@ CV = {
       {"left": "<b>University of Strathclyde</b>, Glasgow", "right": "Sep 2023 – Jun 2027 (expected)",
        "rows": ["<i>BA (Hons) Economics</i>"],
        "bullets": ["Average grade to date: 2:1, including 90% in first-year Finance",
-                   "<b>Relevant Modules:</b> Applied Econometrics; Treasury Management and Derivatives; Advanced Microeconomics"],
+                   "<b>Relevant Modules:</b> Applied Econometrics, Treasury Management and Derivatives, Advanced Microeconomics"],
        "subs": [
          {"left": "<b>Dissertation</b> | <i>MATLAB</i>", "right": "In progress, due 2027",
           "rows": ["<i>“Who Hedges the Barrel? Sovereign Oil Hedging and Petro-Currency Reactions to OPEC News”</i>"],
@@ -46,7 +46,7 @@ CV = {
     ]},
     {"title": "ADDITIONAL INFORMATION", "paras": [
       "<b>Technical:</b> R, MATLAB, Excel, Git",
-      "<b>Interests:</b> poker, over £40,000 in lifetime cash-game profit, using the Kelly criterion to choose stakes and size the bankroll (minimum 50 buy-ins); chess, 14th at the Irish U19 Chess Championships (2023) and won 21 of 22 games in a simultaneous exhibition against players averaging 1860 FIDE; powerlifting, Northern Ireland U19 champion (2023)",
+      "<b>Interests:</b> Poker, over £40,000 in lifetime cash-game profit, using the Kelly criterion to choose stakes and size the bankroll (minimum 50 buy-ins); Chess, 14th at the Irish U19 Chess Championships (2023) and won 21 of 22 games in a simultaneous exhibition against players averaging 1860 FIDE; Powerlifting, Northern Ireland U19 champion (2023)",
     ]},
   ],
 }
