@@ -15,6 +15,8 @@ Short explanations for the newest lines on the Quant CV, with the questions an i
 - *Russia, kinked.* When oil was above a cut-off price ($40 a barrel in 2017 money, raised 2% a year), the Finance Ministry used the extra revenue to buy foreign currency. That buying pushes against rouble strength exactly where oil is high, so the beta should change at the cut-off.
 - *Mexico, one-sided.* The government buys put options on its oil each year. A put pays out when oil falls, so bad oil news should hurt the peso less than good news helps it.
 
+**"Why do you say the hedges reshape oil betas like options?"** Mexico's puts give the government a floor on its oil revenue, so the peso should fall less on bad oil news than it rises on good news: a one-sided beta, like holding oil with a protective put. Russia's rule sold the extra revenue above a cut-off price for foreign currency, which caps the rouble's upside like a covered call, so the beta should kink at the cut-off. Norway's conversions are the exception: they are linear, shrinking the beta everywhere, like hedging part of a position rather than buying an option.
+
 **"Isn't your beta just the dollar?"** Partly, because the dollar itself moves on OPEC days. I remove a dollar factor built from non-commodity currencies and repeat the main results against the euro.
 
 **"How do you know the rule caused the change?"** Difference-in-differences. I compare how the rouble's beta changed when the rule started (February 2017) and during the March–December 2020 sales window against the same change for CAD and NOK. If all three shifted, the rule is not the cause. Data after February 2022 are dropped because sanctions swamp everything else.
