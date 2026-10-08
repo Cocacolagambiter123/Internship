@@ -46,7 +46,9 @@ CV = {
     ]},
     {"title": "ADDITIONAL INFORMATION", "paras": [
       "<b>Technical:</b> R, MATLAB, Excel, Git",
-      "<b>Interests:</b> Poker, over £40,000 in lifetime cash-game profit, using the Kelly criterion to choose stakes and size the bankroll (minimum 50 buy-ins); Chess, 14th at the Irish U19 Chess Championships (2023) and won 21 of 22 games in a simultaneous exhibition against players averaging 1860 FIDE; Powerlifting, Northern Ireland U19 champion (2023)",
+      "<b>Chess:</b> 14th, Irish U19 Championships (2023); won 21 of 22 simultaneous games, opponents averaging 1860 FIDE",
+      "<b>Poker:</b> over £40,000 in lifetime cash-game profit, choosing stakes by the Kelly criterion (minimum 50 buy-ins)",
+      "<b>Powerlifting:</b> Northern Ireland U19 champion (2023)",
     ]},
   ],
 }
