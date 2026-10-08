@@ -2,6 +2,8 @@
 
 Short explanations for the newest lines on the Quant CV, with the questions an interviewer is most likely to ask about each.
 
+**Tell each line as a process, not a result.** Trading interviewers want to see how you think, so walk through each project in this order: the question, what you expected and why, how you checked your tools before trusting them, what you found, and what changed your mind. The CV bullets are written in that order, so you can follow them.
+
 ## Dissertation: Who Hedges the Barrel?
 
 **In 30 seconds.** "I use OPEC-day oil surprises to measure how much each petro-currency moves on oil news, its oil beta. Then I test whether governments that take oil risk off their currency change the shape of that beta: Norway's rule-based krone conversions should shrink it, Russia's 2017–22 budget rule should kink it, and Mexico's put hedge should make it one-sided. Finally I test whether any beta that is left can be traded after costs."
@@ -37,6 +39,7 @@ Short explanations for the newest lines on the Quant CV, with the questions an i
 - Each interval leaves a random error whose size is proportional to the interval's length, T/N.
 - There are N of these errors, and independent errors add up like the square root of their number. The total is √N × T/N = T/√N.
 - Quadrupling N therefore halves the error. The simulation shows exactly that: 0.43 per option with daily hedging, 0.22 with hedging four times a day.
+- That is the check on the CV: regress log(error) on log(N). Theory says the slope is −0.5 and the simulation gives −0.484, so the simulator behaved as it should before I used it for anything new.
 
 **"What happens if you sell at the wrong volatility?"** The option was sold at a price based on 20% volatility. Hedging it costs whatever the option is worth at the volatility the stock actually delivers. If the stock only moves at 15%, hedging costs about 3.37 against the 4.36 received, so the seller keeps about 0.99. That is the difference between the two Black-Scholes prices, and the simulation's average matches it.
 
@@ -51,7 +54,7 @@ Short explanations for the newest lines on the Quant CV, with the questions an i
 
 **"What would you do next?"** Name an extension you have done yourself. Two quick ones: hedge a put instead of a call, or set the drift equal to the risk-free rate (`p.mu = p.r`) and show the gap in the wrong-volatility table disappears.
 
-## Kelly criterion for poker stakes
+## Poker Society: teaching Kelly bankrolls
 
 **What Kelly is.** It sizes each bet to maximise the long-run growth of your bankroll. For a small edge, the best fraction to bet is roughly your edge divided by the variance.
 
@@ -60,18 +63,28 @@ Short explanations for the newest lines on the Quant CV, with the questions an i
 - Play the highest stake your bankroll covers, and move down if the bankroll falls below it.
 - **Use your own numbers.** Have your actual win rate and standard deviation ready, because an interviewer who plays will ask.
 
-**"Why 50 buy-ins and not full Kelly?"**
+**What you taught new members.** If asked, walk through it in four steps, each for the member's own risk level:
+1. Estimate your win rate and standard deviation per 100 hands from your own results.
+2. Kelly bankroll in big blinds ≈ standard deviation² ÷ win rate. Divide by 100 to get buy-ins.
+3. Pick a fraction for your risk level: full Kelly is the most aggressive, half Kelly doubles the bankroll, a third of Kelly triples it.
+4. Add a buffer if your win rate rests on few hands, and move down a stake whenever the bankroll falls below what that stake needs.
+- Why the buffer matters for new players: after 20,000 hands, a standard deviation of 90 leaves a standard error on the win rate of 90 ÷ √200 ≈ 6.4 big blinds per 100, more than the win rate itself. Most new players cannot yet tell a winning record from luck.
+- The same formula works for tournaments if the win rate is your average profit per tournament and the standard deviation is per tournament, both in buy-ins. Tournament swings are much larger, so the bankroll comes out bigger.
+
+**"Why keep more than the Kelly bankroll?" (I kept at least 50 buy-ins myself.)**
 - Your win rate is an estimate from a limited number of hands. Betting more than Kelly is far worse than betting less: at twice the Kelly amount, long-run growth falls to zero.
 - Half Kelly keeps about three-quarters of the growth with half the swings.
 - So you play a fraction of Kelly. In the example above, 50 buy-ins is about a third of Kelly.
 
 **"Do you use Kelly to size your bets?"** "No. Within a hand I size bets from the range of hands my opponent is likely to hold, to get the most value from it. Kelly decides which stakes I play and how big a bankroll I need for them."
 
+**"What did 12 tables at once teach you?"** A possible answer, to adapt to what you actually did: each decision gets a few seconds, so you rely on rules worked out in advance and review the hard spots afterwards. Over thousands of hands, results only show up as averages, which is why I judge decisions by expected value rather than by single outcomes.
+
 ## Other lines to be ready on
 
-**"About 97% … equivalent to roughly 1,300 times as many plain Monte Carlo paths."** Monte Carlo error falls with the square root of the number of paths. In the repo the control variate cuts the standard error from 0.02697 to 0.00076, about 2.8% of plain Monte Carlo, which would otherwise take about 1,300 times as many paths (the script prints 1276). The quick way to see it: the arithmetic and geometric payoffs have correlation ρ = 0.9996, and the control variate leaves a fraction 1 − ρ² of the variance, so the ratio is 1/(1 − ρ²) ≈ 1,300.
+**"Variance fell 1,276-fold (ρ = 0.9996)."** Monte Carlo error falls with the square root of the number of paths. In the repo the control variate cuts the standard error from 0.02697 to 0.00076, about 2.8% of plain Monte Carlo, which would otherwise take about 1,300 times as many paths (the script prints 1276). The quick way to see it: the arithmetic and geometric payoffs have correlation ρ = 0.9996, and the control variate leaves a fraction 1 − ρ² of the variance, so the ratio is 1/(1 − ρ²) ≈ 1,300.
 
-**"Over six times the rate expected by chance."** At the 5% significance level, 5% of tests reject by chance even when the CAPM is right. Rejecting for 31% of portfolios is about 6.2 times that.
+**"About 35 would pass by luck alone."** At the 5% level, 5% of tests reject by chance even when the CAPM is right, and 0.05 × 694 ≈ 35. Finding 215 says most alphas are real, but not which ones; that is why the next bullet applies stricter rules.
 
 ## The new twist in each project, in plain English
 

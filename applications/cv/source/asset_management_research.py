@@ -17,7 +17,7 @@ CV = {
                       "Testing whether what remains is tradable after costs, judged by Sharpe ratio and a White reality check"]},
          {"left": "<b>Empirical CAPM Test</b>", "right": "<i>MATLAB</i>",
           "bullets": ["Tested the CAPM on 694 anomaly portfolios in 54 countries (JKP global factor data) with Newey-West t-tests and the GRS joint test, rejecting it jointly in 48 of 53 countries",
-                      "Showed momentum (35&nbsp;of&nbsp;54 countries) and value (28&nbsp;of&nbsp;54) earn the most persistent alphas and size almost none (5&nbsp;of&nbsp;54); 123 of 215 significant alphas survive a multiple-testing correction"]},
+                      "Asked how many alphas luck alone would produce (about 35 of 694 at 5%) before trusting any: 123 of 215 survive a multiple-testing correction, led by momentum and value, while size looks like luck"]},
          {"left": "<b>Monte Carlo Option Pricing Engine</b>", "right": "<i>MATLAB</i>",
           "bullets": ["Priced European and Asian options by simulation, benchmarked against Black-Scholes; a geometric-Asian control variate cut the arithmetic-Asian standard error by 97%, equivalent to 1,276 times as many paths"]},
        ]},
@@ -34,10 +34,11 @@ CV = {
     ]},
     {"title": "LEADERSHIP AND ACTIVITIES", "entries": [
       {"left": "<b>Strathclyde Agricapital Society</b> | <i>Co-Founder and Treasurer</i>", "right": "Sep 2025 – Present",
-       "bullets": ["Co-founded the university’s first agri-finance society, grew it to 126 members and led weekly research sessions on deals such as Olam Agri’s USD&nbsp;1.24bn stake sale to SALIC",
-                   "Built a wheat calendar-spread strategy in R from futures curve structure and CFTC positioning (weekly backtest: Sharpe 0.76 before costs, 0.28 after, maximum drawdown 3.1%); published weekly notes for members"]},
+       "bullets": ["Co-founded the university’s first agri-finance society (126 members); wrote weekly notes and led sessions on why buyers want each asset and what they pay, as in Olam Agri’s USD&nbsp;1.24bn stake sale to SALIC",
+                   "Built a wheat calendar-spread strategy in R from curve structure and CFTC positioning and judged it after costs: Sharpe 0.76 before, 0.28 after, showing how quickly turnover erodes an edge"]},
       {"left": "<b>Strathclyde Poker Society</b> | <i>Vice-President, then President</i>", "right": "Sep 2025 – Apr 2026",
-       "bullets": ["Ran weekly tournaments for around 60 players on £600 a semester, reconciling every buy-in and prize pool"]},
+       "bullets": ["Ran weekly tournaments for about 60 players on a £600 budget per semester, reconciling buy-ins and prizes",
+                   "Taught new members to use the Kelly criterion to estimate how many buy-ins their win rate, variance and risk level call for, with a buffer in case the edge is overestimated"]},
     ]},
     {"title": "ADDITIONAL INFORMATION", "paras": [
       "<b>Technical:</b> R, MATLAB, Excel, Git",
