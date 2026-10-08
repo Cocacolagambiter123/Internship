@@ -46,7 +46,7 @@ CV = {
     ]},
     {"title": "ADDITIONAL INFORMATION", "paras": [
       "<b>Technical:</b> R, MATLAB, Excel, Git",
-      "<b>Chess:</b> 14th at the 2023 Irish U19 Championships; played 22 opponents at once (average 1860 FIDE) and won 21",
+      "<b>Chess:</b> 14th at the 2023 Irish U19 Championships; gave a 22-board simul (average 1860 FIDE) and won 21 games",
       "<b>Poker:</b> multi-tabled 12 cash games at once; used the Kelly criterion to set stakes from win rate and variance, but stayed below full Kelly (a bankroll of at least 50 buy-ins) in case the edge was overestimated",
       "<b>Powerlifting:</b> Northern Ireland U19 champion (2023)",
     ]},
