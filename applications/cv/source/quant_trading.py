@@ -6,13 +6,13 @@ CV = {
     {"title": "EDUCATION", "entries": [
       {"left": "<b>University of Strathclyde</b>, Glasgow", "right": "Sep 2023 – Jun 2027 (expected)",
        "rows": ["<i>BA (Hons) Economics</i>"],
-       "bullets": ["Average grade to date: 2:1",
+       "bullets": ["Average grade to date: 2:1, including 90% in first-year Finance",
                    "<b>Relevant Modules:</b> Applied Econometrics; Treasury Management and Derivatives; Advanced Microeconomics"],
        "subs": [
          {"left": "<b>Dissertation</b> | <i>MATLAB</i>", "right": "In progress, due 2027",
-          "rows": ["<i>“Who Hedges the Barrel? Sovereign Hedging and Petro-Currency Oil Betas on OPEC Announcement Days”</i>"],
-          "bullets": ["Testing whether a petro-currency’s oil beta shrinks under Norway’s krone conversions (vs unhedged Canada), kinks where Russia’s 2017–22 budget rule starts buying FX and turns one-sided under Mexico’s put hedge",
-                      "Estimating betas on Känzig’s OPEC-announcement oil supply surprises with difference-in-differences across dated regime changes, a purged dollar factor, HAC errors and a block bootstrap",
+          "rows": ["<i>“Who Hedges the Barrel? Sovereign Oil Hedging and Petro-Currency Reactions to OPEC News”</i>"],
+          "bullets": ["Testing whether sovereign hedges reshape a petro-currency’s oil beta: smaller under Norway’s krone conversions (vs unhedged Canada), kinked at Russia’s budget-rule cut-off, one-sided under Mexico’s puts",
+                      "Measuring each currency’s move on OPEC announcement days since 1983, with difference-in-differences around rule changes and the dollar’s own move stripped out",
                       "Testing a pre-registered trading rule on any residual beta after costs, with a White reality check and Kelly sizing"]},
        ]},
       {"left": "<b>Belfast Royal Academy</b>, Belfast", "right": "Jun 2023",
