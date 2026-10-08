@@ -2,6 +2,29 @@
 
 Short explanations for the newest lines on the Quant CV, with the questions an interviewer is most likely to ask about each.
 
+## Dissertation: Who Hedges the Barrel?
+
+**In 30 seconds.** "I use OPEC-day oil surprises to measure how much each petro-currency moves on oil news, its oil beta. Then I test whether governments that take oil risk off their currency change the shape of that beta: Norway's rule-based krone conversions should shrink it, Russia's 2017–22 budget rule should kink it, and Mexico's put hedge should make it one-sided. Finally I test whether any beta that is left can be traded after costs."
+
+**What an oil beta is.** The currency's same-day return per unit of oil news. The news is Känzig's oil supply surprise series: the move in oil futures in a tight window around each OPEC announcement. Little else happens in that window, so the move is mostly OPEC news.
+
+**Why each hedge predicts a different shape.**
+- *Norway, smaller.* Oil money goes into the oil fund abroad. Norges Bank only buys or sells the krone the budget needs, in amounts announced in advance each month. Higher oil revenue therefore brings little extra krone buying. Canada has no such rule, so CAD is the control.
+- *Russia, kinked.* When oil was above a cut-off price ($40 a barrel in 2017 money, raised 2% a year), the Finance Ministry used the extra revenue to buy foreign currency. That buying pushes against rouble strength exactly where oil is high, so the beta should change at the cut-off.
+- *Mexico, one-sided.* The government buys put options on its oil each year. A put pays out when oil falls, so bad oil news should hurt the peso less than good news helps it.
+
+**"Isn't your beta just the dollar?"** Partly, because the dollar itself moves on OPEC days. I remove a dollar factor built from non-commodity currencies and repeat the main results against the euro.
+
+**"How do you know the rule caused the change?"** Difference-in-differences. I compare how the rouble's beta changed when the rule started (February 2017) and during the March–December 2020 sales window against the same change for CAD and NOK. If all three shifted, the rule is not the cause. Data after February 2022 are dropped because sanctions swamp everything else.
+
+**"What is a White reality check?"** If you try several trading rules, the best one looks good by luck. White's test bootstraps the best result across every rule tried and asks how often luck alone would do as well. I fix the main rule before testing it, and the check covers every variant I then try, such as holding for one to five days.
+
+**Kelly sizing.** Bet the fraction of capital that maximises long-run growth: roughly the edge divided by the variance, scaled down because the edge is estimated. Same logic as the poker bankroll below.
+
+**Honest limits, say them before you are asked.** There are few OPEC days inside each regime: perhaps 40–60 under Russia's rule and about 10 in the 2020 sales window. Oil only crossed Russia's cut-off in 2020, together with COVID. Mexico exports little net oil, so the peso's beta may be near zero. A null result still counts: it says markets see through these hedges.
+
+**If asked for results:** "It's in progress. I wrote the three predictions down before running the tests, so whatever comes out is a real test, not something I went looking for."
+
 ## Delta-Hedging Simulator
 
 **In 30 seconds.** "I simulated selling a three-month call option and hedging it with shares, rebalancing at different frequencies, over 50,000 random stock paths. I measured three things: how the hedging error changes with how often you rebalance, what happens if you sell the option at the wrong volatility, and how trading costs change the best rebalancing frequency."

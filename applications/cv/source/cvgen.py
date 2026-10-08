@@ -7,7 +7,7 @@ Layout facts recovered from the original PDFs: A4, Carlito, frame 1.7 cm left/ri
 (plus ReportLab's 6 pt frame padding), body leading 1.2 x size, name size + 9, headings size + 0.8 with a
 0.6 pt rule, 0.6 pt before each bullet or paragraph, right-hand dates in a box 8 pt wider than the text,
 and spacers of 14 / 6 / 4.5 / 7 pt (before a heading / after it / before a sub-entry / between entries)
-scaled down by one factor until the page fits.
+scaled by one factor, the roomiest (up to 1.6) that keeps the page full without spilling over.
 """
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import cm
@@ -129,7 +129,7 @@ def build(cv, path, size, factor, bottom_margin=1.0 * cm):
 
 
 SIZES = (10.5, 10.25)
-FACTORS = (1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4)
+FACTORS = (1.6, 1.5, 1.4, 1.3, 1.2, 1.1, 1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4)
 LOWEST_BOTTOM = 41.6  # lowest point (pt from the page bottom) any of the original CVs reaches
 
 
