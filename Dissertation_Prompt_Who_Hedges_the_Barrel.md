@@ -305,7 +305,7 @@ Say which objections are fatal and which are fixable, and how to fix them.
 - **updated CV dissertation bullets.** My current CV already promises "three predictions fixed in advance", difference-in-differences around Russia's rule changes, and a trading rule with a White reality check and Kelly sizing. The bullets must match what I will actually do;
 - a draft of the dissertation paragraph for my master's personal statements.
 
-**S2. Integrity and quality auditor.** Check that:
+**S2. Fact and quality auditor.** Check that:
 - every citation exists, with a DOI or URL;
 - every data claim is marked verified or unverified;
 - the word budget sums to no more than the limit;
