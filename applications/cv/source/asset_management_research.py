@@ -41,7 +41,7 @@ CV = {
     ]},
     {"title": "ADDITIONAL INFORMATION", "paras": [
       "<b>Technical:</b> R, MATLAB, Excel, Git",
-      "<b>Chess:</b> 14th, Irish U19 Championships (2023); won 21 of 22 simultaneous games, opponents averaging 1860 FIDE",
+      "<b>Chess:</b> 14th at the 2023 Irish U19 Championships; played 22 opponents at once (average 1860 FIDE) and won 21",
       "<b>Powerlifting:</b> Northern Ireland U19 champion (2023)",
     ]},
   ],
